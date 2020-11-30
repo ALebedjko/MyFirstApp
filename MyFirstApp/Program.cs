@@ -6,7 +6,19 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int iterationCount;
+
+            Console.Title = "Iterations";
+            Console.WriteLine("Please enter interation count");
+            String userInput = Console.ReadLine();
+            iterationCount = Int32.Parse(userInput);
+
+
+            while (iterationCount > 0)
+            {
+                Console.WriteLine("Hello World!");
+                iterationCount--;
+            }
         }
     }
 }
